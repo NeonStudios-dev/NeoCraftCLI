@@ -6,11 +6,14 @@ namespace NeoCraftCLI
     {
         public static void Main(string[] args)
         {
+            string VersionCodeName = "Modline";
+            string Version = "0.0.1";
+            string State = "alpha";
             // Check if the user provided a command-line argument
 if (args.Length > 0)
 {
     // Print the first argument to the console
-    Console.WriteLine($"Argument: {args[0]}");
+    //Console.WriteLine($"Argument: {args[0]}");
     
     switch (args[0])
     {
@@ -24,7 +27,7 @@ if (args.Length > 0)
             
         case "--version":
             // Print the version of the application
-            Console.WriteLine("NeoCraftCLI Version alpha preview 0.0.1");
+            Console.WriteLine($"NeoCraftCLI \n -{State} preview {Version}\n -Code Name: {VersionCodeName}");
             break;
             
         default:
