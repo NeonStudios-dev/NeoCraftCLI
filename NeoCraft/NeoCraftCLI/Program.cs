@@ -35,7 +35,7 @@ if (args.Length > 0)
         }
 
  public static void MainMenu(){
-        
+        Console.WriteLine("TestMenu");
     }
     }
 
