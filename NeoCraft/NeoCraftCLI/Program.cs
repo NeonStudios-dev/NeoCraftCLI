@@ -6,41 +6,85 @@ namespace NeoCraftCLI
     {
         public static void Main(string[] args)
         {
-            string VersionCodeName = "Modline";
-            string Version = "0.0.1";
-            string State = "alpha";
-            // Check if the user provided a command-line argument
-if (args.Length > 0)
-{
-    // Print the first argument to the console
-    //Console.WriteLine($"Argument: {args[0]}");
-    
-    switch (args[0])
-    {
-        case "--help":
-            // Print help information
-            Console.WriteLine("Usage: NeoCraftCLI [options]");
-            Console.WriteLine("Options:");
-            Console.WriteLine("  --help       Show this help message");
-            Console.WriteLine("  --version    Show the version of the application");
-            break;
-            
-        case "--version":
-            // Print the version of the application
-            Console.WriteLine($"NeoCraftCLI \n -{State} preview {Version}\n -Code Name: {VersionCodeName}");
-            break;
-            
-        default:
-            MainMenu();
-            break;
-    }
-}
+            string projectName = "NeoCraft";
+            string versionCodeName = "Modline";
+            string version = "0.0.1";
+            string state = "alpha";
+            Console.Title = $"{projectName} - {versionCodeName} {state} {version}";
+
+            if (args.Length > 0)
+            {
+                switch (args[0])
+                {
+                    case "--help":
+                        Console.WriteLine("Usage: NeoCraftCLI [options]");
+                        Console.WriteLine("Options:");
+                        Console.WriteLine("  --help       Show this help message");
+                        Console.WriteLine("  --version    Show the version of the application");
+                        break;
+
+                    case "--version":
+                        Console.WriteLine($"NeoCraftCLI\n - {state} preview {version}\n - Code Name: {versionCodeName}");
+                        break;
+
+                    default:
+                        Console.WriteLine("done");
+                        break;
+                }
+            }
+            else
+            {
+                MainMenu();
+            }
         }
 
- public static void MainMenu(){
-        Console.WriteLine("TestMenu");
-    }
-    }
+        public static void MainMenu()
+        {
+            string projectName = "NeoCraft";
+            string versionCodeName = "Modline";
+            string version = "0.0.1";
+            string state = "alpha";
+            bool running = true;
 
+            while (running)
+            {
+                Console.Clear();
+                Console.WriteLine($"---==== TestMenu - {projectName} {versionCodeName} {state} {version} ====---");
+                Console.WriteLine(@"1 -> Instances
+2 -> Accounts
+3 -> Settings
+4 -> Exit");
+                Console.Write("Select an option: ");
+                string input = Console.ReadLine();
+
+                switch (input)
+                {
+                    case "1":
+                        Console.WriteLine("Instances selected.");
+                        // TODO: Add Instances logic here
+                        break;
+                    case "2":
+                        Console.WriteLine("Accounts selected.");
+                        // TODO: Add Accounts logic here
+                        break;
+                    case "3":
+                        Console.WriteLine("Settings selected.");
+                        // TODO: Add Settings logic here
+                        break;
+                    case "4":
+                        Console.WriteLine("Exiting...");
+                        running = false;
+                        break;
+                    default:
+                        Console.WriteLine("Invalid option. Please try again.");
+                        break;
+                }
+                if (running)
+                {
+                    Console.WriteLine("Press any key to continue...");
+                    Console.ReadKey();
+                }
+            }
+        }
+    }
 }
-
