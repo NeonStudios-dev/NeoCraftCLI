@@ -13,3 +13,18 @@
 /home/flamegrowl/Dokumente/vscode projects/NeoCraft/NeoCraft/NeoCraftCLI/obj/Debug/net9.0/NeoCraftCLI.pdb
 /home/flamegrowl/Dokumente/vscode projects/NeoCraft/NeoCraft/NeoCraftCLI/obj/Debug/net9.0/NeoCraftCLI.genruntimeconfig.cache
 /home/flamegrowl/Dokumente/vscode projects/NeoCraft/NeoCraft/NeoCraftCLI/obj/Debug/net9.0/ref/NeoCraftCLI.dll
+/home/flamegrowl/Dokumente/neonstudios-dev/NeoCraftCLI/NeoCraft/NeoCraftCLI/bin/Debug/net9.0/NeoCraftCLI
+/home/flamegrowl/Dokumente/neonstudios-dev/NeoCraftCLI/NeoCraft/NeoCraftCLI/bin/Debug/net9.0/NeoCraftCLI.deps.json
+/home/flamegrowl/Dokumente/neonstudios-dev/NeoCraftCLI/NeoCraft/NeoCraftCLI/bin/Debug/net9.0/NeoCraftCLI.runtimeconfig.json
+/home/flamegrowl/Dokumente/neonstudios-dev/NeoCraftCLI/NeoCraft/NeoCraftCLI/bin/Debug/net9.0/NeoCraftCLI.dll
+/home/flamegrowl/Dokumente/neonstudios-dev/NeoCraftCLI/NeoCraft/NeoCraftCLI/bin/Debug/net9.0/NeoCraftCLI.pdb
+/home/flamegrowl/Dokumente/neonstudios-dev/NeoCraftCLI/NeoCraft/NeoCraftCLI/obj/Debug/net9.0/NeoCraftCLI.GeneratedMSBuildEditorConfig.editorconfig
+/home/flamegrowl/Dokumente/neonstudios-dev/NeoCraftCLI/NeoCraft/NeoCraftCLI/obj/Debug/net9.0/NeoCraftCLI.AssemblyInfoInputs.cache
+/home/flamegrowl/Dokumente/neonstudios-dev/NeoCraftCLI/NeoCraft/NeoCraftCLI/obj/Debug/net9.0/NeoCraftCLI.AssemblyInfo.cs
+/home/flamegrowl/Dokumente/neonstudios-dev/NeoCraftCLI/NeoCraft/NeoCraftCLI/obj/Debug/net9.0/NeoCraftCLI.csproj.CoreCompileInputs.cache
+/home/flamegrowl/Dokumente/neonstudios-dev/NeoCraftCLI/NeoCraft/NeoCraftCLI/obj/Debug/net9.0/NeoCraftCLI.sourcelink.json
+/home/flamegrowl/Dokumente/neonstudios-dev/NeoCraftCLI/NeoCraft/NeoCraftCLI/obj/Debug/net9.0/NeoCraftCLI.dll
+/home/flamegrowl/Dokumente/neonstudios-dev/NeoCraftCLI/NeoCraft/NeoCraftCLI/obj/Debug/net9.0/refint/NeoCraftCLI.dll
+/home/flamegrowl/Dokumente/neonstudios-dev/NeoCraftCLI/NeoCraft/NeoCraftCLI/obj/Debug/net9.0/NeoCraftCLI.pdb
+/home/flamegrowl/Dokumente/neonstudios-dev/NeoCraftCLI/NeoCraft/NeoCraftCLI/obj/Debug/net9.0/NeoCraftCLI.genruntimeconfig.cache
+/home/flamegrowl/Dokumente/neonstudios-dev/NeoCraftCLI/NeoCraft/NeoCraftCLI/obj/Debug/net9.0/ref/NeoCraftCLI.dll

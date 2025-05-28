@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/flamegrowl/Dokumente/vscode projects/NeoCraft/NeoCraft/NeoCraftCLI/NeoCraftCLI.csproj": {}
+    "/home/flamegrowl/Dokumente/neonstudios-dev/NeoCraftCLI/NeoCraft/NeoCraftCLI/NeoCraftCLI.csproj": {}
   },
   "projects": {
-    "/home/flamegrowl/Dokumente/vscode projects/NeoCraft/NeoCraft/NeoCraftCLI/NeoCraftCLI.csproj": {
+    "/home/flamegrowl/Dokumente/neonstudios-dev/NeoCraftCLI/NeoCraft/NeoCraftCLI/NeoCraftCLI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/flamegrowl/Dokumente/vscode projects/NeoCraft/NeoCraft/NeoCraftCLI/NeoCraftCLI.csproj",
+        "projectUniqueName": "/home/flamegrowl/Dokumente/neonstudios-dev/NeoCraftCLI/NeoCraft/NeoCraftCLI/NeoCraftCLI.csproj",
         "projectName": "NeoCraftCLI",
-        "projectPath": "/home/flamegrowl/Dokumente/vscode projects/NeoCraft/NeoCraft/NeoCraftCLI/NeoCraftCLI.csproj",
+        "projectPath": "/home/flamegrowl/Dokumente/neonstudios-dev/NeoCraftCLI/NeoCraft/NeoCraftCLI/NeoCraftCLI.csproj",
         "packagesPath": "/home/flamegrowl/.nuget/packages/",
-        "outputPath": "/home/flamegrowl/Dokumente/vscode projects/NeoCraft/NeoCraft/NeoCraftCLI/obj/",
+        "outputPath": "/home/flamegrowl/Dokumente/neonstudios-dev/NeoCraftCLI/NeoCraft/NeoCraftCLI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/flamegrowl/.nuget/NuGet/NuGet.Config"
@@ -57,7 +57,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.3, 9.0.3]"
+              "version": "[9.0.4, 9.0.4]"
             }
           ],
           "frameworkReferences": {
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.104/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.105/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

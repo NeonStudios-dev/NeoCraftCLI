@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NeoCraftCLI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c81600811e0accf29ebc764915cbfb9f90521647")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9579ae22e06f91711831827aebb9e66a6dd4ade")]
 [assembly: System.Reflection.AssemblyProductAttribute("NeoCraftCLI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NeoCraftCLI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

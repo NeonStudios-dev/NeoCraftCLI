@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "guG3IONVA5E=",
+  "dgSpecHash": "vL6tZ4AMr+o=",
   "success": true,
-  "projectFilePath": "/home/flamegrowl/Dokumente/vscode projects/NeoCraft/NeoCraft/NeoCraftCLI/NeoCraftCLI.csproj",
+  "projectFilePath": "/home/flamegrowl/Dokumente/neonstudios-dev/NeoCraftCLI/NeoCraft/NeoCraftCLI/NeoCraftCLI.csproj",
   "expectedPackageFiles": [
-    "/home/flamegrowl/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.3/microsoft.aspnetcore.app.ref.9.0.3.nupkg.sha512"
+    "/home/flamegrowl/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.4/microsoft.aspnetcore.app.ref.9.0.4.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using NeoCraftCLI;
 
 namespace NeoCraftCLI
 {
@@ -61,7 +62,7 @@ namespace NeoCraftCLI
                 {
                     case "1":
                         Console.WriteLine("Instances selected.");
-                        // TODO: Add Instances logic here
+                        Imgr.Run();
                         break;
                     case "2":
                         Console.WriteLine("Accounts selected.");
