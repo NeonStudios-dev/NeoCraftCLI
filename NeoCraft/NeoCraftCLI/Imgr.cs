@@ -11,6 +11,7 @@ namespace NeoCraftCLI
         public static void Run()
         {
             //ImgrServ.ListInst();
+            Console.Clear();
         }
     }
 }
