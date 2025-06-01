@@ -1,71 +1,95 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace NeoCraftCLI
 {
     public class ImgrServ
     {
+        // Store instance names in memory for this demo
+        private static List<string> instances = new List<string>();
+
         public static void ListInst()
         {
             Console.WriteLine("Listing Instances...");
-            // Here you would implement the logic to list instances
-            // For example, you might read from a configuration file or a database
-            // and display the instances in a user-friendly format.
-            // This is just a placeholder for demonstration purposes.
-            Console.WriteLine("Instance 1: NeoCraft-1");
-            Console.WriteLine("Instance 2: NeoCraft-2");
-            Console.WriteLine("Instance 3: NeoCraft-3");
+            if (instances.Count == 0)
+            {
+                Console.WriteLine("No instances found.");
+                return;
+            }
+            for (int i = 0; i < instances.Count; i++)
+            {
+                Console.WriteLine($"Instance {i + 1}: {instances[i]}");
+            }
         }
+
         public static void CreateInst(string name)
         {
-            Console.WriteLine($"Creating instance: {name}");
-            // Here you would implement the logic to create a new instance
-            // This might involve creating directories, configuration files, etc.
-            // This is just a placeholder for demonstration purposes.
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                Console.WriteLine("Instance name cannot be empty.");
+                return;
+            }
+            if (instances.Contains(name))
+            {
+                Console.WriteLine($"Instance '{name}' already exists.");
+                return;
+            }
+            instances.Add(name);
             Console.WriteLine($"Instance '{name}' created successfully.");
         }
+
         public static void DeleteInst(string name)
         {
-            Console.WriteLine($"Deleting instance: {name}");
-            // Here you would implement the logic to delete an instance
-            // This might involve removing directories, configuration files, etc.
-            // This is just a placeholder for demonstration purposes.
-            Console.WriteLine($"Instance '{name}' deleted successfully.");
+            if (!instances.Remove(name))
+            {
+                Console.WriteLine($"Instance '{name}' not found.");
+            }
+            else
+            {
+                Console.WriteLine($"Instance '{name}' deleted successfully.");
+            }
         }
+
         public static void StartInst(string name)
         {
-            Console.WriteLine($"Starting instance: {name}");
-            // Here you would implement the logic to start an instance
-            // This might involve launching a process, connecting to a server, etc.
-            // This is just a placeholder for demonstration purposes.
+            if (!instances.Contains(name))
+            {
+                Console.WriteLine($"Instance '{name}' not found.");
+                return;
+            }
             Console.WriteLine($"Instance '{name}' started successfully.");
         }
+
         public static void StopInst(string name)
         {
-            Console.WriteLine($"Stopping instance: {name}");
-            // Here you would implement the logic to stop an instance
-            // This might involve terminating a process, disconnecting from a server, etc.
-            // This is just a placeholder for demonstration purposes.
+            if (!instances.Contains(name))
+            {
+                Console.WriteLine($"Instance '{name}' not found.");
+                return;
+            }
             Console.WriteLine($"Instance '{name}' stopped successfully.");
         }
+
         public static void RestartInst(string name)
         {
-            Console.WriteLine($"Restarting instance: {name}");
-            // Here you would implement the logic to restart an instance
-            // This might involve stopping and then starting the instance again.
-            // This is just a placeholder for demonstration purposes.
+            if (!instances.Contains(name))
+            {
+                Console.WriteLine($"Instance '{name}' not found.");
+                return;
+            }
             Console.WriteLine($"Instance '{name}' restarted successfully.");
         }
+
         public static void UpdateInst(string name)
         {
-            Console.WriteLine($"Updating instance: {name}");
-            // Here you would implement the logic to update an instance
-            // This might involve downloading updates, applying patches, etc.
-            // This is just a placeholder for demonstration purposes.
+            if (!instances.Contains(name))
+            {
+                Console.WriteLine($"Instance '{name}' not found.");
+                return;
+            }
             Console.WriteLine($"Instance '{name}' updated successfully.");
         }
+
         public static void Run()
         {
             Console.Clear();
@@ -83,7 +107,7 @@ namespace NeoCraftCLI
             while (true)
             {
                 Console.Write("\nEnter command number: ");
-                string input = Console.ReadLine();
+                string input = Console.ReadLine()?.Trim();
                 switch (input)
                 {
                     case "1":
@@ -91,46 +115,36 @@ namespace NeoCraftCLI
                         break;
                     case "2":
                         Console.Write("Enter instance name: ");
-                        string createName = Console.ReadLine();
-                        CreateInst(createName);
+                        CreateInst(Console.ReadLine()?.Trim());
                         break;
                     case "3":
                         Console.Write("Enter instance name to delete: ");
-                        string deleteName = Console.ReadLine();
-                        DeleteInst(deleteName);
+                        DeleteInst(Console.ReadLine()?.Trim());
                         break;
                     case "4":
                         Console.Write("Enter instance name to start: ");
-                        string startName = Console.ReadLine();
-                        StartInst(startName);
+                        StartInst(Console.ReadLine()?.Trim());
                         break;
                     case "5":
                         Console.Write("Enter instance name to stop: ");
-                        string stopName = Console.ReadLine();
-                        StopInst(stopName);
+                        StopInst(Console.ReadLine()?.Trim());
                         break;
                     case "6":
                         Console.Write("Enter instance name to restart: ");
-                        string restartName = Console.ReadLine();
-                        RestartInst(restartName);
+                        RestartInst(Console.ReadLine()?.Trim());
                         break;
                     case "7":
                         Console.Write("Enter instance name to update: ");
-                        string updateName = Console.ReadLine();
-                        UpdateInst(updateName);
+                        UpdateInst(Console.ReadLine()?.Trim());
                         break;
                     case "8":
-                        return; // Exit the loop and end the program
+                        Console.WriteLine("Exiting Instance Manager. Goodbye!");
+                        return;
                     default:
                         Console.WriteLine("Invalid command. Please try again.");
                         break;
                 }
             }
         }
-        public static void Main(string[] args)
-        {
-            Run();
-        }
-        
     }
 }
